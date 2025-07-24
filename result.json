@@ -1,0 +1,19 @@
+{
+  "lottery_id": "MyAwesomeLottery",
+  "participants": [
+    "Alice",
+    "Bob",
+    "Charlie",
+    "David",
+    "Eve"
+  ],
+  "prizes": 3,
+  "draw_time": "2025-07-24 18:40:21",
+  "block_num": 22988479,
+  "block_hash": "0x23f90efc52d0b6c1032413f4b636311fc250b3863db4d9f995f5a663f69f9dbe",
+  "winners": [
+    "Alice",
+    "David",
+    "Bob"
+  ]
+}

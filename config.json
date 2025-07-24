@@ -1,0 +1,11 @@
+{
+  "lottery_id": "MyAwesomeLottery",
+  "participants": [
+    "Alice",
+    "Bob",
+    "Charlie",
+    "David",
+    "Eve"
+  ],
+  "prizes": 3
+}
