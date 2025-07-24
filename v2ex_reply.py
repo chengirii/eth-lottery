@@ -22,7 +22,7 @@ def fetch_all_replies(topic_id, auth_token, content_keyword=None, created_before
     logging.info(f"开始获取主题 {topic_id} 的回复...")
 
     while page <= total_pages:
-        params = {"page": page}
+        params = {"p": page}
         try:
             response = requests.get(base_url, headers=headers, params=params)
             response.raise_for_status()
