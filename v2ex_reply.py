@@ -15,7 +15,7 @@ def fetch_all_replies(topic_id, auth_token, content_keyword=None, created_before
         "Authorization": f"Bearer {auth_token}"
     }
 
-    usernames = []
+    usernames = set()
     page = 1
     total_pages = 1  # 初始设为1，后续从响应中获取真实页数
 
@@ -46,7 +46,7 @@ def fetch_all_replies(topic_id, auth_token, content_keyword=None, created_before
                 if created_before and created >= created_before:
                     continue
                 if username:
-                    usernames.append(username)
+                    usernames.add(username)
 
             logging.info(f"已处理第 {page} 页，当前获取到 {len(usernames)} 个用户名。")
             page += 1
